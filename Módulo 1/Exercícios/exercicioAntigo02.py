@@ -20,7 +20,7 @@ while salario <= 0 :
     salario = float(input("Qual o seu salário?\n"))
 
 
-sexo = str(input("Qual o seu sexo? M, F ou Outro\n"))
+sexo = str(input("Qual o seu sexo? M, F ou Outro\n")).split()
 possiveis = ['M', 'm', 'f', 'F', 'Outro', 'outro']
 while sexo not in possiveis:
     print("Dados inválidos")
